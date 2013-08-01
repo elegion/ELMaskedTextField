@@ -16,6 +16,43 @@
 		3942AD6417AA711F0032ED64 /* libELMaskedTextField.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3942AD4B17AA711F0032ED64 /* libELMaskedTextField.a */; };
 		3942AD6A17AA711F0032ED64 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3942AD6817AA711F0032ED64 /* InfoPlist.strings */; };
 		3942AD6D17AA711F0032ED64 /* ELMaskedTextFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3942AD6C17AA711F0032ED64 /* ELMaskedTextFieldTests.m */; };
+		3942AE0817AAC4980032ED64 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3942AD5F17AA711F0032ED64 /* UIKit.framework */; };
+		3942AE0917AAC4980032ED64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3942AD4E17AA711F0032ED64 /* Foundation.framework */; };
+		3942AE0B17AAC4980032ED64 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3942AE0A17AAC4980032ED64 /* CoreGraphics.framework */; };
+		3942AE1117AAC4980032ED64 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3942AE0F17AAC4980032ED64 /* InfoPlist.strings */; };
+		3942AE1317AAC4980032ED64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3942AE1217AAC4980032ED64 /* main.m */; };
+		3942AE1717AAC4980032ED64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3942AE1617AAC4980032ED64 /* AppDelegate.m */; };
+		3942AE1917AAC4980032ED64 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3942AE1817AAC4980032ED64 /* Default.png */; };
+		3942AE1B17AAC4980032ED64 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3942AE1A17AAC4980032ED64 /* Default@2x.png */; };
+		3942AE1D17AAC4980032ED64 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3942AE1C17AAC4980032ED64 /* Default-568h@2x.png */; };
+		3942AE2017AAC4980032ED64 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3942AE1E17AAC4980032ED64 /* MainStoryboard.storyboard */; };
+		3942AE2317AAC4980032ED64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3942AE2217AAC4980032ED64 /* ViewController.m */; };
+		39AEE2CC17C5FB6700612BCF /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5EDD962527B2A666EFB103D /* AddressBook.framework */; };
+		39AEE2CD17C5FB6900612BCF /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5EDDC8E98DA8324289CDEF9 /* AddressBookUI.framework */; };
+		39C4298C17C2072E00075A48 /* ELMaskedTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5EDD4CFEA03FB12A558BC39 /* ELMaskedTextFieldDelegate.m */; };
+		39C4298D17C2073200075A48 /* ELPhoneTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B5EDD6A20E9521061D505F23 /* ELPhoneTextField.m */; };
+		39C4298E17C2073800075A48 /* ELBaseMask.m in Sources */ = {isa = PBXBuildFile; fileRef = B5EDD6B93EAB491AC7C6D538 /* ELBaseMask.m */; };
+		39C4298F17C2073B00075A48 /* ELPhoneMask.m in Sources */ = {isa = PBXBuildFile; fileRef = B5EDDEC63872C2FEC523FEF8 /* ELPhoneMask.m */; };
+		39C4299017C2073E00075A48 /* ELMaskedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3942AD5517AA711F0032ED64 /* ELMaskedTextField.m */; };
+		B5EDD1A6FF91ABF138F1C7E4 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5EDDC8E98DA8324289CDEF9 /* AddressBookUI.framework */; };
+		B5EDD3D2765B05FEA7095992 /* ELABPhonePickerNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5EDD74B788DD0C59561D165 /* ELABPhonePickerNavigationController.m */; };
+		B5EDD4032905230C9E544329 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3942AD5F17AA711F0032ED64 /* UIKit.framework */; };
+		B5EDD639A5DD7985E37F2739 /* ELPhoneTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B5EDD6A20E9521061D505F23 /* ELPhoneTextField.m */; };
+		B5EDD711F17E5C70E52F2670 /* ELBaseMaskTests.m in Resources */ = {isa = PBXBuildFile; fileRef = B5EDD5D1D7F89D648BE9744B /* ELBaseMaskTests.m */; };
+		B5EDD7762DAE1089C1592A5F /* ELPhoneMaskTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5EDD6DA4558EE1F49C5F804 /* ELPhoneMaskTests.m */; };
+		B5EDD88EB1B71BEEB98193C3 /* ELABPhonePickerNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5EDD74B788DD0C59561D165 /* ELABPhonePickerNavigationController.m */; };
+		B5EDD8E4FCC0271629826C64 /* ELPhoneTextFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5EDD5C07EFEC25811F2C7CC /* ELPhoneTextFieldTests.m */; };
+		B5EDD9928D78CDECCC990707 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5EDD962527B2A666EFB103D /* AddressBook.framework */; };
+		B5EDD99CD49F11792EF85362 /* UITextField+OverrideForTesting.m in Sources */ = {isa = PBXBuildFile; fileRef = B5EDD2145357BB2D45679CDB /* UITextField+OverrideForTesting.m */; };
+		B5EDD9AE79FEBE1509A489A0 /* UITextField+SelectText.m in Sources */ = {isa = PBXBuildFile; fileRef = B5EDDB59218989EEA3D1689C /* UITextField+SelectText.m */; };
+		B5EDD9F948F351AEB2AF1235 /* ELPhoneMask.m in Sources */ = {isa = PBXBuildFile; fileRef = B5EDDEC63872C2FEC523FEF8 /* ELPhoneMask.m */; };
+		B5EDDB950CE46B114A8270D8 /* ELMaskedTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5EDD4CFEA03FB12A558BC39 /* ELMaskedTextFieldDelegate.m */; };
+		B5EDDC1474B9E128BD79D867 /* UITextField+SelectText.m in Sources */ = {isa = PBXBuildFile; fileRef = B5EDDB59218989EEA3D1689C /* UITextField+SelectText.m */; };
+		B5EDDC681EC3280946EEB016 /* ELMaskedTextFieldDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5EDD08AE8A68A1669D8651B /* ELMaskedTextFieldDelegateTests.m */; };
+		B5EDDC74C14055ED0AF907F6 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5EDDC8E98DA8324289CDEF9 /* AddressBookUI.framework */; };
+		B5EDDE3BC7DC7F63A9A91A72 /* ELBaseMask.m in Sources */ = {isa = PBXBuildFile; fileRef = B5EDD6B93EAB491AC7C6D538 /* ELBaseMask.m */; };
+		B5EDDFABFA4E70EF5771A43F /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5EDD962527B2A666EFB103D /* AddressBook.framework */; };
+		D8CAA260F6174490B0608B7C /* libPods-ELMaskedTextFieldTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02FBA0EC376049F3BB51F78F /* libPods-ELMaskedTextFieldTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +79,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		02FBA0EC376049F3BB51F78F /* libPods-ELMaskedTextFieldTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ELMaskedTextFieldTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3942AD4B17AA711F0032ED64 /* libELMaskedTextField.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libELMaskedTextField.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3942AD4E17AA711F0032ED64 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3942AD5217AA711F0032ED64 /* ELMaskedTextField-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ELMaskedTextField-Prefix.pch"; sourceTree = "<group>"; };
@@ -52,8 +90,42 @@
 		3942AD5F17AA711F0032ED64 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		3942AD6717AA711F0032ED64 /* ELMaskedTextFieldTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ELMaskedTextFieldTests-Info.plist"; sourceTree = "<group>"; };
 		3942AD6917AA711F0032ED64 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3942AD6B17AA711F0032ED64 /* ELMaskedTextFieldTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELMaskedTextFieldTests.h; sourceTree = "<group>"; };
 		3942AD6C17AA711F0032ED64 /* ELMaskedTextFieldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELMaskedTextFieldTests.m; sourceTree = "<group>"; };
+		3942AE0717AAC4980032ED64 /* ELMaskedTextFieldExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ELMaskedTextFieldExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3942AE0A17AAC4980032ED64 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3942AE0E17AAC4980032ED64 /* ELMaskedTextFieldExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ELMaskedTextFieldExample-Info.plist"; sourceTree = "<group>"; };
+		3942AE1017AAC4980032ED64 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3942AE1217AAC4980032ED64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3942AE1417AAC4980032ED64 /* ELMaskedTextFieldExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ELMaskedTextFieldExample-Prefix.pch"; sourceTree = "<group>"; };
+		3942AE1517AAC4980032ED64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3942AE1617AAC4980032ED64 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3942AE1817AAC4980032ED64 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3942AE1A17AAC4980032ED64 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3942AE1C17AAC4980032ED64 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3942AE1F17AAC4980032ED64 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		3942AE2117AAC4980032ED64 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3942AE2217AAC4980032ED64 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		504D34DF7DF94630B85E2D99 /* Pods-ELMaskedTextFieldTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELMaskedTextFieldTests.xcconfig"; path = "Pods/Pods-ELMaskedTextFieldTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		B5EDD06CDB8D94F09009BC9D /* UITextField+SelectText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+SelectText.h"; sourceTree = "<group>"; };
+		B5EDD08AE8A68A1669D8651B /* ELMaskedTextFieldDelegateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELMaskedTextFieldDelegateTests.m; sourceTree = "<group>"; };
+		B5EDD123C46287D6DC9130D3 /* ELBaseMask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELBaseMask.h; sourceTree = "<group>"; };
+		B5EDD16388DBE44A4A8D8396 /* ELPhoneMask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELPhoneMask.h; sourceTree = "<group>"; };
+		B5EDD17659D79916467238F8 /* ELPhoneTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELPhoneTextField.h; sourceTree = "<group>"; };
+		B5EDD2145357BB2D45679CDB /* UITextField+OverrideForTesting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+OverrideForTesting.m"; sourceTree = "<group>"; };
+		B5EDD258F3306E3D69BD33BD /* ELMaskedTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELMaskedTextFieldDelegate.h; sourceTree = "<group>"; };
+		B5EDD4CFEA03FB12A558BC39 /* ELMaskedTextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELMaskedTextFieldDelegate.m; sourceTree = "<group>"; };
+		B5EDD5C07EFEC25811F2C7CC /* ELPhoneTextFieldTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELPhoneTextFieldTests.m; sourceTree = "<group>"; };
+		B5EDD5D1D7F89D648BE9744B /* ELBaseMaskTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELBaseMaskTests.m; sourceTree = "<group>"; };
+		B5EDD6A20E9521061D505F23 /* ELPhoneTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELPhoneTextField.m; sourceTree = "<group>"; };
+		B5EDD6B93EAB491AC7C6D538 /* ELBaseMask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELBaseMask.m; sourceTree = "<group>"; };
+		B5EDD6DA4558EE1F49C5F804 /* ELPhoneMaskTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELPhoneMaskTests.m; sourceTree = "<group>"; };
+		B5EDD72B85D386C712C2EF11 /* ELABPhonePickerNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELABPhonePickerNavigationController.h; sourceTree = "<group>"; };
+		B5EDD74B788DD0C59561D165 /* ELABPhonePickerNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELABPhonePickerNavigationController.m; sourceTree = "<group>"; };
+		B5EDD962527B2A666EFB103D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		B5EDDAF495C0FA835269866C /* UITextField+OverrideForTesting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+OverrideForTesting.h"; sourceTree = "<group>"; };
+		B5EDDB59218989EEA3D1689C /* UITextField+SelectText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+SelectText.m"; sourceTree = "<group>"; };
+		B5EDDC8E98DA8324289CDEF9 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		B5EDDEC63872C2FEC523FEF8 /* ELPhoneMask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELPhoneMask.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +134,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3942AD4F17AA711F0032ED64 /* Foundation.framework in Frameworks */,
+				B5EDD4032905230C9E544329 /* UIKit.framework in Frameworks */,
+				B5EDDFABFA4E70EF5771A43F /* AddressBook.framework in Frameworks */,
+				B5EDD1A6FF91ABF138F1C7E4 /* AddressBookUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +148,21 @@
 				3942AD6017AA711F0032ED64 /* UIKit.framework in Frameworks */,
 				3942AD6117AA711F0032ED64 /* Foundation.framework in Frameworks */,
 				3942AD6417AA711F0032ED64 /* libELMaskedTextField.a in Frameworks */,
+				D8CAA260F6174490B0608B7C /* libPods-ELMaskedTextFieldTests.a in Frameworks */,
+				39AEE2CC17C5FB6700612BCF /* AddressBook.framework in Frameworks */,
+				39AEE2CD17C5FB6900612BCF /* AddressBookUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3942AE0417AAC4980032ED64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3942AE0817AAC4980032ED64 /* UIKit.framework in Frameworks */,
+				3942AE0917AAC4980032ED64 /* Foundation.framework in Frameworks */,
+				3942AE0B17AAC4980032ED64 /* CoreGraphics.framework in Frameworks */,
+				B5EDD9928D78CDECCC990707 /* AddressBook.framework in Frameworks */,
+				B5EDDC74C14055ED0AF907F6 /* AddressBookUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,9 +173,11 @@
 			isa = PBXGroup;
 			children = (
 				3942AD5017AA711F0032ED64 /* ELMaskedTextField */,
+				3942AE0C17AAC4980032ED64 /* ELMaskedTextFieldExample */,
 				3942AD6517AA711F0032ED64 /* ELMaskedTextFieldTests */,
 				3942AD4D17AA711F0032ED64 /* Frameworks */,
 				3942AD4C17AA711F0032ED64 /* Products */,
+				504D34DF7DF94630B85E2D99 /* Pods-ELMaskedTextFieldTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +186,7 @@
 			children = (
 				3942AD4B17AA711F0032ED64 /* libELMaskedTextField.a */,
 				3942AD5C17AA711F0032ED64 /* ELMaskedTextFieldTests.octest */,
+				3942AE0717AAC4980032ED64 /* ELMaskedTextFieldExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,9 +194,13 @@
 		3942AD4D17AA711F0032ED64 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B5EDD962527B2A666EFB103D /* AddressBook.framework */,
+				B5EDDC8E98DA8324289CDEF9 /* AddressBookUI.framework */,
 				3942AD4E17AA711F0032ED64 /* Foundation.framework */,
 				3942AD5D17AA711F0032ED64 /* SenTestingKit.framework */,
 				3942AD5F17AA711F0032ED64 /* UIKit.framework */,
+				02FBA0EC376049F3BB51F78F /* libPods-ELMaskedTextFieldTests.a */,
+				3942AE0A17AAC4980032ED64 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,9 +208,13 @@
 		3942AD5017AA711F0032ED64 /* ELMaskedTextField */ = {
 			isa = PBXGroup;
 			children = (
+				B5EDD7DFFEDA8CED3696140B /* ELMaskedTextFieldDelegate */,
+				B5EDD4F3608719B1DD3A45A5 /* Fields */,
+				B5EDD0D853874073E367A3FD /* Masks */,
 				3942AD5317AA711F0032ED64 /* ELMaskedTextField.h */,
 				3942AD5517AA711F0032ED64 /* ELMaskedTextField.m */,
 				3942AD5117AA711F0032ED64 /* Supporting Files */,
+				B5EDD34777A2DF44476DDDCA /* Utils */,
 			);
 			path = ELMaskedTextField;
 			sourceTree = "<group>";
@@ -129,7 +230,10 @@
 		3942AD6517AA711F0032ED64 /* ELMaskedTextFieldTests */ = {
 			isa = PBXGroup;
 			children = (
-				3942AD6B17AA711F0032ED64 /* ELMaskedTextFieldTests.h */,
+				B5EDD3199868D56E46B0B2F6 /* Fields */,
+				B5EDD9FB8A1FB9BCC142ECA3 /* Masks */,
+				B5EDD0F8DE0898DB496032B9 /* TestHelpers */,
+				B5EDD08AE8A68A1669D8651B /* ELMaskedTextFieldDelegateTests.m */,
 				3942AD6C17AA711F0032ED64 /* ELMaskedTextFieldTests.m */,
 				3942AD6617AA711F0032ED64 /* Supporting Files */,
 			);
@@ -143,6 +247,131 @@
 				3942AD6817AA711F0032ED64 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3942AE0C17AAC4980032ED64 /* ELMaskedTextFieldExample */ = {
+			isa = PBXGroup;
+			children = (
+				3942AE1517AAC4980032ED64 /* AppDelegate.h */,
+				3942AE1617AAC4980032ED64 /* AppDelegate.m */,
+				3942AE1E17AAC4980032ED64 /* MainStoryboard.storyboard */,
+				3942AE2117AAC4980032ED64 /* ViewController.h */,
+				3942AE2217AAC4980032ED64 /* ViewController.m */,
+				3942AE0D17AAC4980032ED64 /* Supporting Files */,
+			);
+			path = ELMaskedTextFieldExample;
+			sourceTree = "<group>";
+		};
+		3942AE0D17AAC4980032ED64 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3942AE0E17AAC4980032ED64 /* ELMaskedTextFieldExample-Info.plist */,
+				3942AE0F17AAC4980032ED64 /* InfoPlist.strings */,
+				3942AE1217AAC4980032ED64 /* main.m */,
+				3942AE1417AAC4980032ED64 /* ELMaskedTextFieldExample-Prefix.pch */,
+				3942AE1817AAC4980032ED64 /* Default.png */,
+				3942AE1A17AAC4980032ED64 /* Default@2x.png */,
+				3942AE1C17AAC4980032ED64 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5EDD0D853874073E367A3FD /* Masks */ = {
+			isa = PBXGroup;
+			children = (
+				B5EDD5F356BAA08730703290 /* ELBaseMask */,
+				B5EDD49191507B562EE44EF2 /* ELPhoneMask */,
+			);
+			path = Masks;
+			sourceTree = "<group>";
+		};
+		B5EDD0F8DE0898DB496032B9 /* TestHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				B5EDDAF495C0FA835269866C /* UITextField+OverrideForTesting.h */,
+				B5EDD2145357BB2D45679CDB /* UITextField+OverrideForTesting.m */,
+			);
+			path = TestHelpers;
+			sourceTree = "<group>";
+		};
+		B5EDD3199868D56E46B0B2F6 /* Fields */ = {
+			isa = PBXGroup;
+			children = (
+				B5EDD5C07EFEC25811F2C7CC /* ELPhoneTextFieldTests.m */,
+			);
+			path = Fields;
+			sourceTree = "<group>";
+		};
+		B5EDD34777A2DF44476DDDCA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B5EDDB59218989EEA3D1689C /* UITextField+SelectText.m */,
+				B5EDD06CDB8D94F09009BC9D /* UITextField+SelectText.h */,
+				B5EDDE92F941D6AE3A28EBC0 /* ELABPhonePickerNavigationController */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B5EDD49191507B562EE44EF2 /* ELPhoneMask */ = {
+			isa = PBXGroup;
+			children = (
+				B5EDD16388DBE44A4A8D8396 /* ELPhoneMask.h */,
+				B5EDDEC63872C2FEC523FEF8 /* ELPhoneMask.m */,
+			);
+			path = ELPhoneMask;
+			sourceTree = "<group>";
+		};
+		B5EDD4F3608719B1DD3A45A5 /* Fields */ = {
+			isa = PBXGroup;
+			children = (
+				B5EDDC1E25B68B7785B965D1 /* ELPhoneTextField */,
+			);
+			path = Fields;
+			sourceTree = "<group>";
+		};
+		B5EDD5F356BAA08730703290 /* ELBaseMask */ = {
+			isa = PBXGroup;
+			children = (
+				B5EDD123C46287D6DC9130D3 /* ELBaseMask.h */,
+				B5EDD6B93EAB491AC7C6D538 /* ELBaseMask.m */,
+			);
+			path = ELBaseMask;
+			sourceTree = "<group>";
+		};
+		B5EDD7DFFEDA8CED3696140B /* ELMaskedTextFieldDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B5EDD258F3306E3D69BD33BD /* ELMaskedTextFieldDelegate.h */,
+				B5EDD4CFEA03FB12A558BC39 /* ELMaskedTextFieldDelegate.m */,
+			);
+			path = ELMaskedTextFieldDelegate;
+			sourceTree = "<group>";
+		};
+		B5EDD9FB8A1FB9BCC142ECA3 /* Masks */ = {
+			isa = PBXGroup;
+			children = (
+				B5EDD5D1D7F89D648BE9744B /* ELBaseMaskTests.m */,
+				B5EDD6DA4558EE1F49C5F804 /* ELPhoneMaskTests.m */,
+			);
+			path = Masks;
+			sourceTree = "<group>";
+		};
+		B5EDDC1E25B68B7785B965D1 /* ELPhoneTextField */ = {
+			isa = PBXGroup;
+			children = (
+				B5EDD17659D79916467238F8 /* ELPhoneTextField.h */,
+				B5EDD6A20E9521061D505F23 /* ELPhoneTextField.m */,
+			);
+			path = ELPhoneTextField;
+			sourceTree = "<group>";
+		};
+		B5EDDE92F941D6AE3A28EBC0 /* ELABPhonePickerNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				B5EDD74B788DD0C59561D165 /* ELABPhonePickerNavigationController.m */,
+				B5EDD72B85D386C712C2EF11 /* ELABPhonePickerNavigationController.h */,
+			);
+			path = ELABPhonePickerNavigationController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,10 +398,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3942AD7317AA711F0032ED64 /* Build configuration list for PBXNativeTarget "ELMaskedTextFieldTests" */;
 			buildPhases = (
+				8F253FD9EF6742329EA0056F /* Check Pods Manifest.lock */,
 				3942AD5717AA711F0032ED64 /* Sources */,
 				3942AD5817AA711F0032ED64 /* Frameworks */,
 				3942AD5917AA711F0032ED64 /* Resources */,
 				3942AD5A17AA711F0032ED64 /* ShellScript */,
+				48EB8FAB89844B39A7B83E7A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -183,6 +414,23 @@
 			productName = ELMaskedTextFieldTests;
 			productReference = 3942AD5C17AA711F0032ED64 /* ELMaskedTextFieldTests.octest */;
 			productType = "com.apple.product-type.bundle";
+		};
+		3942AE0617AAC4980032ED64 /* ELMaskedTextFieldExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3942AE2617AAC4980032ED64 /* Build configuration list for PBXNativeTarget "ELMaskedTextFieldExample" */;
+			buildPhases = (
+				3942AE0317AAC4980032ED64 /* Sources */,
+				3942AE0417AAC4980032ED64 /* Frameworks */,
+				3942AE0517AAC4980032ED64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ELMaskedTextFieldExample;
+			productName = ELMaskedTextFieldExample;
+			productReference = 3942AE0717AAC4980032ED64 /* ELMaskedTextFieldExample.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -206,6 +454,7 @@
 			projectRoot = "";
 			targets = (
 				3942AD4A17AA711F0032ED64 /* ELMaskedTextField */,
+				3942AE0617AAC4980032ED64 /* ELMaskedTextFieldExample */,
 				3942AD5B17AA711F0032ED64 /* ELMaskedTextFieldTests */,
 			);
 		};
@@ -217,6 +466,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				3942AD6A17AA711F0032ED64 /* InfoPlist.strings in Resources */,
+				B5EDD711F17E5C70E52F2670 /* ELBaseMaskTests.m in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3942AE0517AAC4980032ED64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3942AE1117AAC4980032ED64 /* InfoPlist.strings in Resources */,
+				3942AE1917AAC4980032ED64 /* Default.png in Resources */,
+				3942AE1B17AAC4980032ED64 /* Default@2x.png in Resources */,
+				3942AE1D17AAC4980032ED64 /* Default-568h@2x.png in Resources */,
+				3942AE2017AAC4980032ED64 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +498,36 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		48EB8FAB89844B39A7B83E7A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-ELMaskedTextFieldTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F253FD9EF6742329EA0056F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -244,6 +536,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3942AD5617AA711F0032ED64 /* ELMaskedTextField.m in Sources */,
+				B5EDDB950CE46B114A8270D8 /* ELMaskedTextFieldDelegate.m in Sources */,
+				B5EDDE3BC7DC7F63A9A91A72 /* ELBaseMask.m in Sources */,
+				B5EDD9F948F351AEB2AF1235 /* ELPhoneMask.m in Sources */,
+				B5EDD639A5DD7985E37F2739 /* ELPhoneTextField.m in Sources */,
+				B5EDDC1474B9E128BD79D867 /* UITextField+SelectText.m in Sources */,
+				B5EDD88EB1B71BEEB98193C3 /* ELABPhonePickerNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +550,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				3942AD6D17AA711F0032ED64 /* ELMaskedTextFieldTests.m in Sources */,
+				B5EDD99CD49F11792EF85362 /* UITextField+OverrideForTesting.m in Sources */,
+				B5EDDC681EC3280946EEB016 /* ELMaskedTextFieldDelegateTests.m in Sources */,
+				B5EDD8E4FCC0271629826C64 /* ELPhoneTextFieldTests.m in Sources */,
+				B5EDD7762DAE1089C1592A5F /* ELPhoneMaskTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3942AE0317AAC4980032ED64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3942AE1317AAC4980032ED64 /* main.m in Sources */,
+				3942AE1717AAC4980032ED64 /* AppDelegate.m in Sources */,
+				3942AE2317AAC4980032ED64 /* ViewController.m in Sources */,
+				39C4298C17C2072E00075A48 /* ELMaskedTextFieldDelegate.m in Sources */,
+				39C4298D17C2073200075A48 /* ELPhoneTextField.m in Sources */,
+				39C4298E17C2073800075A48 /* ELBaseMask.m in Sources */,
+				39C4298F17C2073B00075A48 /* ELPhoneMask.m in Sources */,
+				39C4299017C2073E00075A48 /* ELMaskedTextField.m in Sources */,
+				B5EDD3D2765B05FEA7095992 /* ELABPhonePickerNavigationController.m in Sources */,
+				B5EDD9AE79FEBE1509A489A0 /* UITextField+SelectText.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +591,22 @@
 				3942AD6917AA711F0032ED64 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3942AE0F17AAC4980032ED64 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3942AE1017AAC4980032ED64 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3942AE1E17AAC4980032ED64 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3942AE1F17AAC4980032ED64 /* en */,
+			);
+			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -301,7 +636,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -324,7 +659,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -356,6 +691,7 @@
 		};
 		3942AD7417AA711F0032ED64 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 504D34DF7DF94630B85E2D99 /* Pods-ELMaskedTextFieldTests.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -371,6 +707,7 @@
 		};
 		3942AD7517AA711F0032ED64 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 504D34DF7DF94630B85E2D99 /* Pods-ELMaskedTextFieldTests.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -381,6 +718,41 @@
 				INFOPLIST_FILE = "ELMaskedTextFieldTests/ELMaskedTextFieldTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		3942AE2417AAC4980032ED64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ELMaskedTextFieldExample/ELMaskedTextFieldExample-Prefix.pch";
+				INFOPLIST_FILE = "ELMaskedTextFieldExample/ELMaskedTextFieldExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3942AE2517AAC4980032ED64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ELMaskedTextFieldExample/ELMaskedTextFieldExample-Prefix.pch";
+				INFOPLIST_FILE = "ELMaskedTextFieldExample/ELMaskedTextFieldExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
@@ -403,6 +775,7 @@
 				3942AD7217AA711F0032ED64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3942AD7317AA711F0032ED64 /* Build configuration list for PBXNativeTarget "ELMaskedTextFieldTests" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +784,16 @@
 				3942AD7517AA711F0032ED64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3942AE2617AAC4980032ED64 /* Build configuration list for PBXNativeTarget "ELMaskedTextFieldExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3942AE2417AAC4980032ED64 /* Debug */,
+				3942AE2517AAC4980032ED64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

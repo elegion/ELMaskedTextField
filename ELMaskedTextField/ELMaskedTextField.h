@@ -6,8 +6,16 @@
 //  Copyright (c) 2013 e-legion. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "ELBaseMask.h"
 
-@interface ELMaskedTextField : NSObject
+@interface ELMaskedTextField : UITextField
+
+@property (nonatomic, strong) ELBaseMask *mask;
+
+- (void)setRawText:(NSString *)text;
+
+#pragma mark - Protected methods
+
+- (void)setupMaskedTextField;
 
 @end
