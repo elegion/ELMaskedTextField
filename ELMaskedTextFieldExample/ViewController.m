@@ -28,7 +28,6 @@
     [ABPickerButton addTarget:self.phoneTextField action:@selector(pickFromAddressBook:) forControlEvents:UIControlEventTouchUpInside];
     self.phoneTextField.rightView = ABPickerButton;
     self.phoneTextField.rightViewMode = UITextFieldViewModeAlways;
-    [self.view addSubview:ABPickerButton];
 }
 
 #pragma mark - Actions
