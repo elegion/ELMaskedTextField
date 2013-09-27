@@ -14,23 +14,8 @@
     return @"+# (###) ###-##-##";
 }
 
-- (NSString *)placeholderSymbol {
-    return @"_";
-}
-
 - (BOOL)isValidInput:(NSString *)input {
     return [super isValidInput:input];
-}
-
-
-- (NSString *)cleanInput:(NSString *)input {
-    NSRegularExpression *nonNumericRe = [NSRegularExpression regularExpressionWithPattern:@"\\D+"
-                                                                                  options:0
-                                                                                    error:nil];
-    return [nonNumericRe stringByReplacingMatchesInString:input
-                                                  options:0
-                                                    range:(NSRange){0, [input length]}
-                                             withTemplate:@""];
 }
 
 - (NSString *)apply:(NSString *)input {
@@ -75,52 +60,6 @@
         }
         return [result stringByReplacingOccurrencesOfString:@"#" withString:self.placeholderSymbol];
     }
-}
-
-- (NSUInteger)adjustCursorPosition:(NSUInteger)position forInput:(NSString *)input isDelete:(BOOL)isDelete {
-    NSUInteger (^firstNumberToTheLeft)() = ^NSUInteger{
-        for (NSUInteger i=position; i > 0; i--) {
-            unichar c = [input characterAtIndex:i - 1];
-            if (c >= '0' && c <= '9') {
-                return i;
-            }
-        }
-        return (NSUInteger)NSNotFound;
-    };
-    NSUInteger (^firstNumberOrVacantToTheRight)() = ^NSUInteger{
-        for (NSUInteger i=MIN(position + 1, [input length]); i<[input length]; i++) {
-            unichar c = [input characterAtIndex:i];
-            if ((c >= '0' && c <= '9') || (c == [self.placeholderSymbol characterAtIndex:0])) {
-                return i;
-            }
-        }
-        return (NSUInteger)NSNotFound;
-    };
-    NSUInteger (^firstVacantPosition)() = ^NSUInteger{
-        for (NSUInteger i=0; i<[input length]; i++) {
-            unichar c = [input characterAtIndex:i];
-            if (c == [self.placeholderSymbol characterAtIndex:0]) {
-                return i;
-            }
-        }
-        return NSNotFound;
-    };
-    NSUInteger (^defaultPos)() = ^NSUInteger{
-        return [self.defaultMask rangeOfString:@"#"].location;
-    };
-
-    NSUInteger res;
-    if (isDelete) {
-        res = firstNumberToTheLeft();
-    } else {
-        res = MIN(firstNumberOrVacantToTheRight(), [input length]);
-        res = MIN(res, firstVacantPosition()); // in case if cursor if far to the right from first vacant position
-                                               // +7 (1__) _|__-__-__ => +7 (1|__) ___-__-__
-    }
-    if (res == NSNotFound) {
-        res = defaultPos();
-    }
-    return res;
 }
 
 - (NSString *)countryCodeFromPhone:(NSString *)phone {

@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 E-Legion. All rights reserved.
 //
 
-#import "ELBaseMask.h"
+#import "ELNumericMask.h"
 
-@interface ELPhoneMask : ELBaseMask
+@interface ELPhoneMask : ELNumericMask
 
 @property (nonatomic, strong) NSString *countryCode;
 
