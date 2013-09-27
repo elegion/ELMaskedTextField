@@ -82,7 +82,7 @@
 
     NSUInteger res;
     if (isDelete) {
-        res = firstNumberToTheLeft();
+        res = MAX(firstNumberToTheLeft(), defaultPos());
     } else {
         res = MIN(firstNumberOrVacantToTheRight(), [input length]);
         res = MIN(res, firstVacantPosition()); // in case if cursor if far to the right from first vacant position
