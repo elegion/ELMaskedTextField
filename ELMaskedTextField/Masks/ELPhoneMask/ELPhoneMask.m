@@ -18,48 +18,26 @@
     return [super isValidInput:input];
 }
 
+- (NSString *)cleanInput:(NSString *)input {
+    NSString *cleanInput = [super cleanInput:input];
+    return [cleanInput substringFromIndex:MIN([cleanInput length], [self.countryCode length])];
+}
+
 - (NSString *)apply:(NSString *)input {
-    const NSInteger localPhoneLength = 10;
-    NSString *cleanInput = [self cleanInput:input];
-    NSString *countryCode = [self countryCodeFromPhone:cleanInput];
-    NSMutableString *result = [NSMutableString stringWithString:[self defaultMask]];
-    NSRange countryCodeRange = [result rangeOfString:@"#"]; // First # stands for country code
-    NSString *localPhone = @"";
-
+    NSString *mask = self.defaultMask;
+    NSRange countryCodeRange = [mask rangeOfString:@"#"]; // First # stands for country code
     if (self.countryCode) {
-        if (countryCode == nil) {
-            localPhone = cleanInput;
-        } else if (![countryCode isEqualToString:self.countryCode]) {
-            if ([cleanInput length] <= localPhoneLength) {
-                localPhone = cleanInput;
-            } else {
-                localPhone = [cleanInput substringFromIndex:MIN([countryCode length], [self.countryCode length])];
-            }
-        } else { // countryCode == self.countryCode
-            localPhone = [cleanInput substringFromIndex:MIN([countryCode length], [self.countryCode length])];
-        }
-        countryCode = self.countryCode;
-    } else if (countryCode) {
-        localPhone = [cleanInput substringFromIndex:[countryCode length]];
-    }
-
-    if (countryCode) {
-        NSString *paddedLocalPhone = [localPhone stringByPaddingToLength:10 withString:self.placeholderSymbol startingAtIndex:0];
-        NSUInteger j=0;
-        [result replaceCharactersInRange:countryCodeRange withString:countryCode];
-        for (NSUInteger i=0; i< [result length]; i++) {
-            if ([result characterAtIndex:i] == '#') {
-                [result replaceCharactersInRange:(NSRange){i, 1} withString:[paddedLocalPhone substringWithRange:(NSRange) {j, 1}]];
-                j++;
-            }
-        }
-        return result;
+        mask = [mask stringByReplacingCharactersInRange:countryCodeRange withString:self.countryCode];
     } else {
-        if (cleanInput) {
-            [result replaceCharactersInRange:countryCodeRange withString:[cleanInput stringByAppendingString:self.placeholderSymbol]];
-        }
-        return [result stringByReplacingOccurrencesOfString:@"#" withString:self.placeholderSymbol];
+        NSString *cleanInput = [self cleanInput:input];
+        NSString *countryCode = [self countryCodeFromPhone:cleanInput];
+        NSString *countryCodeMask = [@"" stringByPaddingToLength:[countryCode length] ?: [cleanInput length] + 1
+                                                      withString:@"#"
+                                                 startingAtIndex:0];
+        mask = [mask stringByReplacingCharactersInRange:countryCodeRange withString:countryCodeMask];
     }
+    self.inputMask = mask;
+    return [super apply:input];
 }
 
 - (NSString *)countryCodeFromPhone:(NSString *)phone {
