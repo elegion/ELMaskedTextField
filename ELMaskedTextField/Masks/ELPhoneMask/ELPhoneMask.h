@@ -10,6 +10,7 @@
 
 @interface ELPhoneMask : ELNumericMask
 
+@property (nonatomic, strong) NSString *phoneMask; // use this instead of inputMask
 @property (nonatomic, strong) NSString *countryCode;
 
 @end

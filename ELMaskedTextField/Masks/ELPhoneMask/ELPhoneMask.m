@@ -10,8 +10,12 @@
 
 @implementation ELPhoneMask
 
-- (NSString *)defaultMask {
-    return @"+# (###) ###-##-##";
+- (id)init {
+    self = [super init];
+    if (self) {
+        self.phoneMask = @"+# (###) ###-##-##";
+    }
+    return self;
 }
 
 - (BOOL)isValidInput:(NSString *)input {
@@ -24,7 +28,7 @@
 }
 
 - (NSString *)apply:(NSString *)input {
-    NSString *mask = self.defaultMask;
+    NSString *mask = self.phoneMask;
     NSRange countryCodeRange = [mask rangeOfString:@"#"]; // First # stands for country code
     if (self.countryCode) {
         mask = [mask stringByReplacingCharactersInRange:countryCodeRange withString:self.countryCode];
