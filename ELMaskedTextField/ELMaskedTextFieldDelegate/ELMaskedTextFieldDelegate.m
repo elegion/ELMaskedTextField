@@ -47,6 +47,10 @@
     if (![textField.text length]) {
         textField.text = @"";
     }
+    NSUInteger newOffset = [self.mask adjustCursorPosition:textField.text.length
+                                                  forInput:textField.text
+                                                  isDelete:NO];
+    [textField selectTextAtRange:(NSRange){newOffset}];
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField {
