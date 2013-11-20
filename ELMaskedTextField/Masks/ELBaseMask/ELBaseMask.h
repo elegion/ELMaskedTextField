@@ -11,6 +11,7 @@
 - (BOOL)isValidInput:(NSString *)input;
 - (NSString *)cleanInput:(NSString *)input;
 - (NSString *)apply:(NSString *)input;
+- (NSRange)adjustReplacementRange:(NSRange)range isDelete:(BOOL)delete;
 - (NSUInteger)adjustCursorPosition:(NSUInteger)position forInput:(NSString *)input isDelete:(BOOL)isDelete;
 
 @end

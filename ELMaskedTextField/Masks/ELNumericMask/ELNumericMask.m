@@ -48,6 +48,43 @@
     return result;
 }
 
+- (NSRange)adjustReplacementRange:(NSRange)range isDelete:(BOOL)delete {
+    NSInteger (^firstInputableToTheLeft)() = ^NSInteger{
+        for (NSInteger i=MIN(range.location, self.inputMask.length - 1); i >= 0; i--) {
+            unichar c = [self.inputMask characterAtIndex:i];
+            if (c == '#') {
+                return i;
+            }
+        }
+        return NSNotFound;
+    };
+    NSInteger (^firstInputableToTheRight)() = ^NSInteger{
+        for (NSInteger i=range.location; i < self.inputMask.length; i++) {
+            unichar c = [self.inputMask characterAtIndex:i];
+            if (c == '#') {
+                return i;
+            }
+        }
+        return NSNotFound;
+    };
+    if (range.length == 0 || (delete && range.length == 1)) {
+        if (delete) {
+            NSInteger location = firstInputableToTheLeft();
+            if (location == NSNotFound) {
+                location = firstInputableToTheRight();
+            }
+            range.location = location;
+        } else {
+            NSInteger location = firstInputableToTheRight();
+            if (location == NSNotFound) {
+                location = firstInputableToTheLeft();
+            }
+            range.location = location;
+        }
+    }
+    return range;
+}
+
 - (NSUInteger)adjustCursorPosition:(NSUInteger)position forInput:(NSString *)input isDelete:(BOOL)isDelete {
     NSUInteger (^firstNumberToTheLeft)() = ^NSUInteger{
         for (NSUInteger i=position; i > 0; i--) {

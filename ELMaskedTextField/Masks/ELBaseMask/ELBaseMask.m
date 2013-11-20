@@ -22,6 +22,10 @@
     return input;
 }
 
+- (NSRange)adjustReplacementRange:(NSRange)range isDelete:(BOOL)delete {
+    return range;
+}
+
 - (NSUInteger)adjustCursorPosition:(NSUInteger)position forInput:(NSString *)input isDelete:(BOOL)isDelete {
     return position + (isDelete ? 0 : 1);
 }
