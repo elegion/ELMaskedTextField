@@ -67,7 +67,8 @@
         }
         return NSNotFound;
     };
-    if (range.length == 0 || (delete && range.length == 1)) {
+    BOOL atEndOfMask = range.location == [self.inputMask rangeOfString:@"#" options:NSBackwardsSearch].location + 1;
+    if (!atEndOfMask && (range.length == 0 || (delete && range.length == 1))) {
         if (delete) {
             NSInteger location = firstInputableToTheLeft();
             if (location == NSNotFound) {
