@@ -7,8 +7,7 @@
 //
 
 #import "ELMaskedTextField.h"
-
-@class ELNumericMask;
+#import "ELNumericMask.h"
 
 
 @interface ELNumericTextField : ELMaskedTextField
