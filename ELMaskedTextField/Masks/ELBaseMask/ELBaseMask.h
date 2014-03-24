@@ -9,6 +9,7 @@
 @interface ELBaseMask : NSObject
 
 - (BOOL)isValidInput:(NSString *)input;
+- (BOOL)isValidData:(NSString *)data;
 - (NSString *)cleanInput:(NSString *)input;
 - (NSString *)apply:(NSString *)input;
 - (NSRange)adjustReplacementRange:(NSRange)range isDelete:(BOOL)delete;

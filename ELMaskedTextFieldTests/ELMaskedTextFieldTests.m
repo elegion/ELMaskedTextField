@@ -15,11 +15,13 @@ SPEC_BEGIN(ELMaskedTextFieldSpec)
 
 describe(@"ELMaskedTextField", ^{
     __block id maskedTextFieldDelegateMock;
+    __block id maskMock;
 
     beforeEach(^{
         maskedTextFieldDelegateMock = [ELMaskedTextFieldDelegate mock];
         [ELMaskedTextFieldDelegate stub:@selector(alloc) andReturn:maskedTextFieldDelegateMock];
         [maskedTextFieldDelegateMock stub:@selector(initWithRealDelegate:mask:) andReturn:maskedTextFieldDelegateMock];
+        maskMock = [ELBaseMask mock];
     });
 
     it(@"should inherit from UITextField", ^{
@@ -34,6 +36,30 @@ describe(@"ELMaskedTextField", ^{
             ELMaskedTextField *textField = [[ELMaskedTextField alloc] init];
 
             [[(id)textField.delegate should] equal:maskedTextFieldDelegateMock];
+        });
+    });
+
+    describe(@"hasValidData", ^{
+        it(@"should pass it's .text to mask.hasValidData", ^{
+            NSString *testText = @"+7 (123)";
+            [[maskMock should] receive:@selector(isValidData:) andReturn:theValue(YES) withArguments:testText];
+
+            ELMaskedTextField *textField = [[ELMaskedTextField alloc] init];
+            [textField stub:@selector(text) andReturn:testText]; // FIXME: why setRawText doesn't work here?
+            textField.mask = maskMock;
+
+            [[theValue([textField hasValidData]) should] beYes];
+        });
+
+        it(@"should return mask.hasValidData's result", ^{
+            NSString *testText = @"+7 (123)";
+            [[maskMock should] receive:@selector(isValidData:) andReturn:theValue(NO) withArguments:testText];
+
+            ELMaskedTextField *textField = [[ELMaskedTextField alloc] init];
+            [textField stub:@selector(text) andReturn:testText]; // FIXME: why setRawText doesn't work here?
+            textField.mask = maskMock;
+
+            [[theValue([textField hasValidData]) should] beNo];
         });
     });
 

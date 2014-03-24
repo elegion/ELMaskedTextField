@@ -19,6 +19,10 @@
     return self;
 }
 
+- (BOOL)isValidData:(NSString *)data {
+//    return YES;
+    return [[self apply:data] rangeOfString:self.placeholderSymbol].location == NSNotFound;
+}
 
 - (NSString *)cleanInput:(NSString *)input {
     NSRegularExpression *nonNumericRe = [NSRegularExpression regularExpressionWithPattern:@"\\D+"

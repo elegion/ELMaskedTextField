@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39358F6F186EFBCE00CF556A /* ELNumericMaskTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39358F6E186EFBCE00CF556A /* ELNumericMaskTests.m */; };
 		3942AD4F17AA711F0032ED64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3942AD4E17AA711F0032ED64 /* Foundation.framework */; };
 		3942AD5417AA711F0032ED64 /* ELMaskedTextField.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3942AD5317AA711F0032ED64 /* ELMaskedTextField.h */; };
 		3942AD5617AA711F0032ED64 /* ELMaskedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3942AD5517AA711F0032ED64 /* ELMaskedTextField.m */; };
@@ -84,6 +85,7 @@
 
 /* Begin PBXFileReference section */
 		02FBA0EC376049F3BB51F78F /* libPods-ELMaskedTextFieldTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ELMaskedTextFieldTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39358F6E186EFBCE00CF556A /* ELNumericMaskTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELNumericMaskTests.m; sourceTree = "<group>"; };
 		3942AD4B17AA711F0032ED64 /* libELMaskedTextField.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libELMaskedTextField.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3942AD4E17AA711F0032ED64 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3942AD5217AA711F0032ED64 /* ELMaskedTextField-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ELMaskedTextField-Prefix.pch"; sourceTree = "<group>"; };
@@ -371,6 +373,7 @@
 			children = (
 				B5EDD5D1D7F89D648BE9744B /* ELBaseMaskTests.m */,
 				B5EDD6DA4558EE1F49C5F804 /* ELPhoneMaskTests.m */,
+				39358F6E186EFBCE00CF556A /* ELNumericMaskTests.m */,
 			);
 			path = Masks;
 			sourceTree = "<group>";
@@ -583,6 +586,7 @@
 				B5EDD99CD49F11792EF85362 /* UITextField+OverrideForTesting.m in Sources */,
 				B5EDDC681EC3280946EEB016 /* ELMaskedTextFieldDelegateTests.m in Sources */,
 				B5EDD8E4FCC0271629826C64 /* ELPhoneTextFieldTests.m in Sources */,
+				39358F6F186EFBCE00CF556A /* ELNumericMaskTests.m in Sources */,
 				B5EDD7762DAE1089C1592A5F /* ELPhoneMaskTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

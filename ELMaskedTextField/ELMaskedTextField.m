@@ -21,6 +21,10 @@
     self.delegate = nil;
 }
 
+- (BOOL)hasValidData {
+    return [self.mask isValidData:self.text];
+}
+
 - (void)setRawText:(NSString *)text {
     [super setText:text];
 }

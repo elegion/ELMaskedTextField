@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) ELBaseMask *mask;
 
+- (BOOL)hasValidData;
 - (void)setRawText:(NSString *)text;
 
 #pragma mark - Protected methods

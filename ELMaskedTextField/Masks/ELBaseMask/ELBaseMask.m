@@ -14,6 +14,10 @@
     return YES;
 }
 
+- (BOOL)isValidData:(NSString *)data {
+    return YES;
+}
+
 - (NSString *)cleanInput:(NSString *)input {
     return input;
 }
