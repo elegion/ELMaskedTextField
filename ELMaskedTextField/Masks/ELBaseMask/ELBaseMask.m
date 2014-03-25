@@ -26,7 +26,7 @@
     return input;
 }
 
-- (NSRange)adjustReplacementRange:(NSRange)range isDelete:(BOOL)delete {
+- (NSRange)adjustReplacementRange:(NSRange)range forInput:(NSString *)input isDelete:(BOOL)delete {
     return range;
 }
 

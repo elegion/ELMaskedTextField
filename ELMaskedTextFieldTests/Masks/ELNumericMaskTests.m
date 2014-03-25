@@ -33,6 +33,16 @@ describe(@"ELNumericMask", ^{
             [[theValue([testedObject isValidData:@"7961"]) should] beYes];
         });
     });
+
+    describe(@"adjustReplacementRange:forInput:isDelete:", ^{
+        it(@"should move cursor to the first inputable position to the right", ^{
+            [[@([testedObject adjustReplacementRange:NSMakeRange(0, 0) forInput:@"+" isDelete:NO].location) should] equal:@1];
+        });
+
+        it(@"should not move cursor outside [input length]", ^{
+            [[@([testedObject adjustReplacementRange:NSMakeRange(0, 0) forInput:@"" isDelete:NO].location) should] equal:@0];
+        });
+    });
 });
 
 SPEC_END

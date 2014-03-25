@@ -67,7 +67,7 @@
             && ![self.realDelegate textField:textField shouldChangeCharactersInRange:range replacementString:string]) {
         return NO;
     }
-    range = [self.mask adjustReplacementRange:range isDelete:![string length]];
+    range = [self.mask adjustReplacementRange:range forInput:textField.text isDelete:![string length]];
     NSString *newString = [textField.text stringByReplacingCharactersInRange:range withString:string];
     if (![self.mask isValidInput:newString]) {
         return NO;

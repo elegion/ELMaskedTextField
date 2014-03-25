@@ -52,7 +52,7 @@
     return result;
 }
 
-- (NSRange)adjustReplacementRange:(NSRange)range isDelete:(BOOL)delete {
+- (NSRange)adjustReplacementRange:(NSRange)range forInput:(NSString *)input isDelete:(BOOL)delete {
     NSInteger (^firstInputableToTheLeft)() = ^NSInteger{
         for (NSInteger i=MIN(range.location, self.inputMask.length - 1); i >= 0; i--) {
             unichar c = [self.inputMask characterAtIndex:i];
@@ -78,13 +78,13 @@
             if (location == NSNotFound) {
                 location = firstInputableToTheRight();
             }
-            range.location = location;
+            range.location = MIN(location, [input length]);
         } else {
             NSInteger location = firstInputableToTheRight();
             if (location == NSNotFound) {
                 location = firstInputableToTheLeft();
             }
-            range.location = location;
+            range.location = MIN(location, [input length]);
         }
     }
     return range;
