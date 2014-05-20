@@ -68,12 +68,16 @@
         return NO;
     }
     range = [self.mask adjustReplacementRange:range forInput:textField.text isDelete:![string length]];
-    NSString *newString = [textField.text stringByReplacingCharactersInRange:range withString:string];
+    NSString *initialString = textField.text;
+    NSString *newString = [initialString stringByReplacingCharactersInRange:range withString:string];
     if (![self.mask isValidInput:newString]) {
         return NO;
     }
 
     textField.text = newString;
+    if (![textField.text isEqualToString:initialString]) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:UITextFieldTextDidChangeNotification object:textField];
+    }
 
     NSUInteger newOffset = [self.mask adjustCursorPosition:range.location
                                                   forInput:textField.text
